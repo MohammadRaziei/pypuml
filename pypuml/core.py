@@ -2,15 +2,10 @@ from __future__ import annotations
 
 from pathlib import Path
 import tempfile
-from typing import Optional, Sequence, TypeVar
+from typing import Optional
 
 from mmdc import MermaidConverter
 
-T = TypeVar("T")
-
-
-def cat(arr1: Sequence[T], arr2: Sequence[T]) -> list[T]:
-    return list(arr1) + list(arr2)
 
 
 def _format_node(node: str) -> str:
